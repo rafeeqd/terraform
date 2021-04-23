@@ -14,6 +14,6 @@ resource "aws_vpc" "prodvpcterraform" {
   enable_dns_hostnames = true
   tags = {
 
-    Name = "VPC from Jenkins"
+    Name = "VPC from Jenkins 2"
 }
 }
