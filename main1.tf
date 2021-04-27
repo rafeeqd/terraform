@@ -1,6 +1,7 @@
 
 # Terraform HCL
 # something else
+# You should push to main branch not to master
 provider "aws" {
   region = "us-east-1"
   #shared_credentials_file = "~/.aws/credentials"
