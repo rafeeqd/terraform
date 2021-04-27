@@ -1,6 +1,7 @@
 
 # Terraform HCL
 # Comment 1
+# comment 2
 
 provider "aws" {
   region = "us-east-1"
