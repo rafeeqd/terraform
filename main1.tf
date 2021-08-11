@@ -4,8 +4,8 @@
 # You should push to main branch not to master
 provider "aws" {
   region = "us-east-1"
-  #shared_credentials_file = "~/.aws/credentials"
-  #profile = "default"
+  shared_credentials_file = "~/.aws/credentials"
+  profile = "default"
 }
 
 
@@ -17,4 +17,8 @@ resource "aws_vpc" "prodvpcterraform" {
 
     Name = "VPC from Jenkins 1012"
 }
+}
+
+output "vpc output" {
+value=aws_vpc.prodvpcterraform
 }
