@@ -53,3 +53,6 @@ resource "aws_instance" "foo" {
     cpu_credits = "unlimited"
   }
 }
+output "some" {
+x=resource.aws_vpc.my_vpc.id
+}
