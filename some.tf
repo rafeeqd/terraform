@@ -54,3 +54,6 @@ resource "aws_instance" "foo" {
   }
 }
 
+output "some" {
+value=aws_vpc.my_vpc.id
+}
