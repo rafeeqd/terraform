@@ -1,3 +1,3 @@
 output "some2" {
-value= "Modified"
+value= "modified from vscode"
 }
