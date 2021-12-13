@@ -15,5 +15,8 @@ variable "ami_to_select" {
 variable "instance_type" {
   type    = string
   #default = "t2.micro"
+}
+ouput "another branch" {
+  value = " This sould go to another brach in the list"
 
 }
