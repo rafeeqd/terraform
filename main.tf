@@ -27,8 +27,9 @@ resource "aws_network_interface" "gitfoo" {
 }
 
 resource "aws_instance" "gitfoo" {
-  ami           = "ami-083654bd07b5da81d" # us-west-2
-  instance_type = "t2.micro"
+  #ami           = "ami-083654bd07b5da81d" # us-west-2
+  ami = lookup(var.instance_type,var.ami_to_select)
+  instance_type = var.instance_type
 
   network_interface {
     network_interface_id = aws_network_interface.gitfoo.id
@@ -41,5 +42,5 @@ resource "aws_instance" "gitfoo" {
 }
 
 output "some" {
-value=aws_vpc.my_vpc.id
+  value = aws_vpc.my_vpc.id
 }
