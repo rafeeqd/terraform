@@ -44,3 +44,5 @@ resource "aws_instance" "gitfoo" {
 output "some" {
   value = aws_vpc.my_vpc.id
 }
+
+# just a comment
