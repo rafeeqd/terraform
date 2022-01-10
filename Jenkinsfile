@@ -4,10 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo "hello how r you?"
+                echo 'Hello World'
             }
         }
     }
 }
-//commit
-//commit 3
